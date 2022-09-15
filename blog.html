@@ -24,21 +24,32 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                Question-2 : What is difference between global scope and block scope ?
+                Question-2 : How to work JavaScript event loop ?
             </button>
           </h2>
           <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"></div>
+            <div class="accordion-body">
+                <h5>The event loop</h5>
+            <p>JavaScript has a runtime model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks. This model is quite different from models in other languages like C and Java.</p>
+            <p>Each message is processed completely before any other message is processed.</p>
+            <p>This offers some nice properties when reasoning about your program, including the fact that whenever a function runs, it cannot be preempted and will run entirely before any other code runs (and can modify data the function manipulates). This differs from C, for instance, where if a function runs in a thread, it may be stopped at any point by the runtime system to run some other code in another thread.</p>
+            </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                Question-3 : How to work JavaScript event loop ?
+                Question-3 : What is difference between global scope and block scope ?
             </button>
           </h2>
           <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body"></div>
+            <div class="accordion-body">
+            <p>In programming, the scope of a variable determines its lifetime. The scope describes if a variable, a function or an object is accessible or inaccessible by different parts of the program during runtime. In this article, we will see examples to cover briefly the global, local and block scopes in JavaScript.</p>
+            <h5>The Global scope</h5>
+            <p>A variable exists inside or outside a block. If a variable is declared outside all functions or curly braces ({}), it exists in the global scope. The global variables can be accessed by any line of code in the program, including inside blocks.</p>
+            <h5>The Block scope</h5>
+            <p>So far, we’ve seen variables defined with the var keyword. Var can declare a variable either in the global or local scope. The variables that are declared within the block scope are comparable to local ones. They are available within the block that they are defined.</p>
+            </div>
           </div>
         </div>
         <div class="accordion-item">
